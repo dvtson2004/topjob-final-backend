@@ -38,7 +38,7 @@ public class NotificationService {
             notification.setRead(false);
             markForDeletion(notification, 5);
             //cmt email service de test
-//            emailService.sendEmailForJobToJobSeeker(jobSeeker, job);
+           emailService.sendEmailForJobToJobSeeker(jobSeeker, job);
 //             Save notification
             notificationRepository.save(notification);
             // Send real-time notification
